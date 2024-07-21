@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head><title>btc prediction</title>
+</head>
+<body>
+  <section class="header">
+      <style>
+        .header{
+          min-height: 100vh;
+          width: 100%;
+          background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(0, 0, 0, 0.74)), url(/static/b3img.png);
+          background-position: center;
+          background-size: contain;
+          position: relative;
+        }
+      </style>
+      <div class="nav-bar">
+        <img src="/static/images/b2img.png" class="logo" style="width: 80px;">
+      </div>
+      <form class="grid" method ="POST" action ="{{url_for('predict')}}">
+        <table cellpadding="6" width="30%" height="300px" bgcolor="white" align="center" cellspacing="14" style="font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+        <tr>
+          <td colspan=2 style="font-size: 40px;">
+          <b>Bitcoin Prediction</b>
+        </td>
+        </tr>
+        <tr>
+          <td>N_Transaction</td>
+          <td><input type="number" step="0.01" name="ntransaction" id="N_Transaction" size="30" required></td>
+        </tr>
+        <tr>
+         <td>Fee</td>
+         <td><input type="number" step="0.01" name="fee" id="Fee" size="30" required></td>
+       </tr>
+       <tr>
+          <td>BTC Search Trends</td>
+          <td><input type="number" step="0.01" name="BST" id="BTCSearchTrends" size="30" required></td>
+        </tr>
+        <tr>
+        <td>Gold Price [USD]</td>
+          <td><input type="number" step="0.01" name="GP" id="GoldPrice" size="30" required></td>
+        </tr>
+        <tr>
+          <td>Close Index</td>
+          <td><input type="number" step="0.01" name="CI" id="CloseId" size="30" required></td>
+        </tr>
+        <tr>
+          <td>Oil Price [USD]</td>
+          <td><input type="number" step="0.01" name="OP" id="oilprice" size="30" required></td>
+        </tr>
+        <tr>
+          <td>M2 [USD]</td>
+          <td><input type="number" step="0.01" name="M2" id="M2" size="30" required></td>
+        </tr>
+        <tr>
+          <td><input type="submit" value="Predict" required></td>
+        </tr>
+        <tr>
+          <td><b>Bitcoin Price</b></td>
+          <td><input type="text" name="bitcoin" id="bitcoin" value={{bitcoin}}>
+          </td>
+        </tr>
+        </table>
+      </form>
+    </section>
+  </body>
+</html>
