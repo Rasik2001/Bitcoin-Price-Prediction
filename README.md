@@ -2,6 +2,10 @@
 
 ### DESCRIPTION:
   In this project, I have developed an application for Bitcoin price prediction using the Weighted Ensemble algorithm, which achieves more than 95% accuracy on the given dataset. This project can be used to predict Bitcoin prices in the future. I aim to optimize this project to accept any dataset for training the model in the future.
+
+### DATA ANALYSIS:
+[click here](https://colab.research.google.com/drive/1PlywdCxwSsfOX-U5Ly48CnXWs3b6DbGM?usp=sharing) to know more about the Data Analysis part.
+
 ### HOW TO INSTALL AND RUN THE PROJECT:
   1) Clone this repo and create a virtual environment for the project using the below command: `python3.9 -m venv environment_name`
      
