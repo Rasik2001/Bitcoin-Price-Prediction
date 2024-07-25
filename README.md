@@ -12,5 +12,10 @@
   5) Now execute the below command to install all the required libraries:   'pip install -r requirements.txt'.  This will install all the required libraries.
      
   6) Now you can run the project by running the below command:  'python main.py'
+  
+  7) Now our application will be running in this url 'http://localhost:5000/index'
+  
+  8) Open the browser and use the application.
 
 
+For any doubts or clarification contact me at gmail via abdulrasik2001@gmail.com
